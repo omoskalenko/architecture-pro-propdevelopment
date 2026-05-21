@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" version="24.8.0">
+  <diagram name="C4 Context — Умный дом" id="context-smart-home">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <object placeholders="1" c4Name="Собственник" c4Type="Person" c4Description="Управляет домофоном и шлагбаумом через мобильное приложение" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#cccccc&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="ctx-owner">
+          <mxCell style="html=1;fontSize=11;dashed=0;whiteSpace=wrap;fillColor=#083F75;strokeColor=#06315C;fontColor=#ffffff;shape=mxgraph.c4.person2;align=center;metaEdit=1;resizable=0;" vertex="1" parent="1">
+            <mxGeometry x="120" y="320" width="200" height="180" as="geometry" />
+          </mxCell>
+        </object>
+
+        <object placeholders="1" c4Name="PropDevelopment" c4Type="SystemScopeBoundary" c4Application="Software System" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;&lt;div style=&quot;text-align: left&quot;&gt;%c4Name%&lt;/div&gt;&lt;/b&gt;&lt;/font&gt;&lt;div style=&quot;text-align: left&quot;&gt;[%c4Application%]&lt;/div&gt;" id="ctx-boundary">
+          <mxCell style="rounded=1;fontSize=11;whiteSpace=wrap;html=1;dashed=1;arcSize=20;fillColor=none;strokeColor=#666666;fontColor=#333333;align=left;verticalAlign=bottom;spacing=10;dashPattern=8 4;metaEdit=1;rotatable=0;perimeter=rectanglePerimeter;noLabel=0;labelPadding=0;allowArrows=0;connectable=0;expand=0;recursiveResize=0;editable=1;pointerEvents=0;absoluteArcSize=1;" vertex="1" parent="1">
+            <mxGeometry x="400" y="200" width="520" height="380" as="geometry" />
+          </mxCell>
+        </object>
+
+        <object placeholders="1" c4Name="PropDevelopment" c4Type="Software System" c4Description="Мобильное приложение собственников, сервисы ЖКУ, управление интеллектуальным домофоном и шлагбаумом" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#cccccc&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="ctx-pd">
+          <mxCell style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#1061B0;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#0D5091;metaEdit=1;resizable=0;" vertex="1" parent="1">
+            <mxGeometry x="480" y="340" width="360" height="140" as="geometry" />
+          </mxCell>
+        </object>
+
+        <object placeholders="1" c4Name="Платформа партнёра «Умный дом»" c4Type="Software System" c4Description="Интеллектуальный домофон: видео, биометрия, открытие по звонку. Интеллектуальный шлагбаум: распознавание госномеров" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#cccccc&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="ctx-partner">
+          <mxCell style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#8C8496;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#736782;metaEdit=1;resizable=0;" vertex="1" parent="1">
+            <mxGeometry x="1020" y="280" width="300" height="140" as="geometry" />
+          </mxCell>
+        </object>
+
+        <object placeholders="1" c4Name="Поставщик ресурсов ЖКХ" c4Type="Software System" c4Description="Существующая интеграция: ЖКУ, информация о доме" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#cccccc&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="ctx-uk">
+          <mxCell style="rounded=1;whiteSpace=wrap;html=1;labelBackgroundColor=none;fillColor=#8C8496;fontColor=#ffffff;align=center;arcSize=10;strokeColor=#736782;metaEdit=1;resizable=0;" vertex="1" parent="1">
+            <mxGeometry x="1020" y="480" width="300" height="100" as="geometry" />
+          </mxCell>
+        </object>
+
+        <object placeholders="1" c4Name="Гость / посетитель" c4Type="Person" c4Description="Звонит в домофон, подъезжает к шлагбауму" label="&lt;font style=&quot;font-size: 16px&quot;&gt;&lt;b&gt;%c4Name%&lt;/b&gt;&lt;/font&gt;&lt;div&gt;[%c4Type%]&lt;/div&gt;&lt;br&gt;&lt;div&gt;&lt;font style=&quot;font-size: 11px&quot;&gt;&lt;font color=&quot;#cccccc&quot;&gt;%c4Description%&lt;/font&gt;&lt;/div&gt;" id="ctx-guest">
+          <mxCell style="html=1;fontSize=11;dashed=0;whiteSpace=wrap;fillColor=#083F75;strokeColor=#06315C;fontColor=#ffffff;shape=mxgraph.c4.person2;align=center;metaEdit=1;resizable=0;" vertex="1" parent="1">
+            <mxGeometry x="120" y="560" width="200" height="180" as="geometry" />
+          </mxCell>
+        </object>
+
+        <mxCell id="ctx-e1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="ctx-owner" target="ctx-pd">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ctx-e1-l" value="Управляет домофоном&lt;div&gt;и шлагбаумом&lt;/div&gt;&lt;div&gt;[Mobile App]&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;" connectable="0" vertex="1" parent="ctx-e1">
+          <mxGeometry relative="1" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+
+        <mxCell id="ctx-e2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;startArrow=block;endFill=1;startFill=1;" edge="1" parent="1" source="ctx-pd" target="ctx-partner">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ctx-e2-l" value="Управление доступом,&lt;div&gt;события распознавания&lt;/div&gt;&lt;div&gt;[REST + Webhooks,&lt;/div&gt;&lt;div&gt;OAuth2, mTLS]&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;" connectable="0" vertex="1" parent="ctx-e2">
+          <mxGeometry relative="1" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+
+        <mxCell id="ctx-e3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="ctx-pd" target="ctx-uk">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ctx-e3-l" value="ЖКУ, информация о доме&lt;div&gt;[REST]&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;" connectable="0" vertex="1" parent="ctx-e3">
+          <mxGeometry relative="1" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+
+        <mxCell id="ctx-e4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;endArrow=block;endFill=1;" edge="1" parent="1" source="ctx-guest" target="ctx-partner">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points"><mxPoint x="220" y="720" /><mxPoint x="980" y="720" /><mxPoint x="980" y="350" /></Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ctx-e4-l" value="Звонок в домофон,&lt;div&gt;въезд к шлагбауму&lt;/div&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;" connectable="0" vertex="1" parent="ctx-e4">
+          <mxGeometry relative="1" as="geometry"><mxPoint as="offset" /></mxGeometry>
+        </mxCell>
+
+        <mxCell id="ctx-note" value="&lt;b&gt;Контекст Task 3&lt;/b&gt;&lt;br&gt;Новые функции «Умный дом» доступны&lt;br&gt;через существующее мобильное&lt;br&gt;приложение собственников." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;align=left;spacingLeft=8;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="400" y="620" width="260" height="80" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
