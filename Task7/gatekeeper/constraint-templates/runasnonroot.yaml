@@ -1,0 +1,60 @@
+apiVersion: templates.gatekeeper.sh/v1
+kind: ConstraintTemplate
+metadata:
+  name: k8spsrunasnonroot
+spec:
+  crd:
+    spec:
+      names:
+        kind: K8sPSRunAsNonRoot
+      validation:
+        openAPIV3Schema:
+          type: object
+  targets:
+    - target: admission.k8s.gatekeeper.sh
+      rego: |
+        package k8spsrunasnonroot
+
+        violation[{"msg": msg}] {
+          c := input_containers[_]
+          not container_run_as_non_root(c)
+          msg := sprintf("container %q: требуется runAsNonRoot: true (и UID != 0)", [c.name])
+        }
+
+        violation[{"msg": msg}] {
+          c := input_containers[_]
+          not container_read_only_root_fs(c)
+          msg := sprintf("container %q: требуется readOnlyRootFilesystem: true", [c.name])
+        }
+
+        container_run_as_non_root(c) {
+          c.securityContext.runAsNonRoot == true
+        }
+
+        container_run_as_non_root(c) {
+          c.securityContext.runAsUser > 0
+        }
+
+        container_run_as_non_root(c) {
+          input.review.object.spec.securityContext.runAsNonRoot == true
+        }
+
+        container_run_as_non_root(c) {
+          input.review.object.spec.securityContext.runAsUser > 0
+        }
+
+        container_read_only_root_fs(c) {
+          c.securityContext.readOnlyRootFilesystem == true
+        }
+
+        input_containers[c] {
+          c := input.review.object.spec.containers[_]
+        }
+
+        input_containers[c] {
+          c := input.review.object.spec.initContainers[_]
+        }
+
+        input_containers[c] {
+          c := input.review.object.spec.ephemeralContainers[_]
+        }
