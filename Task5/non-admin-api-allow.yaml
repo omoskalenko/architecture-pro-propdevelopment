@@ -1,0 +1,83 @@
+# Сетевые политики: трафик только между front-end и back-end-api.
+# Namespace: default (как в примере kubectl run без -n).
+# Метки подов: role=front-end | role=back-end-api
+#
+# После применения политики изолируют back-end-api от admin-front-end,
+# admin-back-end-api и прочих подов без метки role=front-end.
+# Аналогично front-end не принимает трафик от admin-*.
+#
+# Развёртывание сервисов (выполнить вручную):
+#   kubectl run front-end-app --image=nginx --labels role=front-end --expose --port 80
+#   kubectl run back-end-api-app --image=nginx --labels role=back-end-api --expose --port 80
+#   kubectl run admin-front-end-app --image=nginx --labels role=admin-front-end --expose --port 80
+#   kubectl run admin-back-end-api-app --image=nginx --labels role=admin-back-end-api --expose --port 80
+#
+# Применение:
+#   kubectl apply -f non-admin-api-allow.yaml
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: back-end-api-allow-front-end
+  namespace: default
+spec:
+  podSelector:
+    matchLabels:
+      role: back-end-api
+  policyTypes:
+    - Ingress
+    - Egress
+  ingress:
+    - from:
+        - podSelector:
+            matchLabels:
+              role: front-end
+      ports:
+        - protocol: TCP
+          port: 80
+  egress:
+    - to:
+        - podSelector:
+            matchLabels:
+              role: front-end
+      ports:
+        - protocol: TCP
+          port: 80
+
+---
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: front-end-allow-back-end-api
+  namespace: default
+spec:
+  podSelector:
+    matchLabels:
+      role: front-end
+  policyTypes:
+    - Ingress
+    - Egress
+  ingress:
+    - from:
+        - podSelector:
+            matchLabels:
+              role: back-end-api
+      ports:
+        - protocol: TCP
+          port: 80
+  egress:
+    - to:
+        - namespaceSelector:
+            matchLabels:
+              kubernetes.io/metadata.name: kube-system
+      ports:
+        - protocol: UDP
+          port: 53
+        - protocol: TCP
+          port: 53
+    - to:
+        - podSelector:
+            matchLabels:
+              role: back-end-api
+      ports:
+        - protocol: TCP
+          port: 80

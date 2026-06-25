@@ -1,0 +1,42 @@
+@startuml container-diagram-smart-home
+!include https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Container.puml
+
+title C4 Container: PropDevelopment (доработка — «Умный дом»)
+
+Person(owner, "Собственник")
+
+System_Boundary(pd, "PropDevelopment") {
+    Container(mobile, "Витрина сервисов для собственников", "Mobile iOS/Android", "ЖКУ + домофон + шлагбаум")
+    Container(tenant_core, "tenant-core-app", "Kotlin, Spring Boot", "BFF для собственников")
+    ContainerDb(tenant_db, "tenant-core-db", "PostgreSQL", "Данные ЖКУ")
+    Container(crm, "CRM собственников", "Kotlin, Spring Boot", "Профили собственников")
+    ContainerDb(crm_db, "crm-tenant-db", "PostgreSQL", "CRM-данные")
+
+    Container(smart_home, "smart-home-service", "Kotlin, Spring Boot", "**[NEW]** Домофон, шлагбаум, правила доступа")
+    ContainerDb(smart_home_db, "smart-home-db", "PostgreSQL", "**[NEW]** face_id, госномера")
+    Container(gateway, "integration-gateway", "API Gateway", "**[NEW]** API партнёра, webhooks, tenant isolation")
+
+    Container(auth, "auth-service-1", "Keycloak", "OAuth2/OIDC")
+    ContainerDb(auth_db, "auth-db-1", "PostgreSQL", "Учётные записи")
+}
+
+System_Ext(partner, "Платформа партнёра «Умный дом»", "Домофон, шлагбаум, биометрия")
+System_Ext(uk, "Поставщик ресурсов ЖКХ", "ЖКУ")
+System_Ext(pay, "Платёжная система", "Платежи")
+
+Rel(owner, mobile, "Использует")
+Rel(mobile, auth, "Аутентификация", "OAuth2/PKCE")
+Rel(mobile, tenant_core, "API", "REST/JWT")
+Rel(tenant_core, tenant_db, "JDBC")
+Rel(tenant_core, smart_home, "Запросы «Умный дом»", "REST")
+Rel(tenant_core, pay, "Оплата", "REST")
+Rel(smart_home, smart_home_db, "JDBC")
+Rel(smart_home, crm, "Профиль", "REST")
+Rel(smart_home, gateway, "API партнёра", "REST")
+Rel(gateway, partner, "Управление устройствами", "REST, OAuth2, mTLS")
+Rel(partner, gateway, "События", "Webhooks, HMAC")
+Rel(gateway, smart_home, "Доставка событий", "REST")
+Rel(tenant_core, uk, "ЖКУ", "REST")
+
+SHOW_LEGEND()
+@enduml

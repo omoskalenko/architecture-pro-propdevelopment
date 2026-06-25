@@ -1,0 +1,1040 @@
+[
+  {
+    "auditID": "07966e71-bff9-4ce1-b629-532765b9ef16",
+    "stage": "RequestReceived",
+    "level": "RequestResponse",
+    "verb": "create",
+    "requestURI": "/apis/rbac.authorization.k8s.io/v1/namespaces/kube-system/rolebindings?timeout=10s",
+    "timestamp": "2026-06-23T07:23:02.892977Z",
+    "user": {
+      "username": "kubernetes-admin",
+      "groups": [
+        "kubeadm:cluster-admins",
+        "system:authenticated"
+      ],
+      "uid": null
+    },
+    "impersonatedUser": null,
+    "sourceIPs": [
+      "192.168.49.2"
+    ],
+    "userAgent": "kubeadm/v1.30.5 (linux/arm64) kubernetes/74e84a9",
+    "objectRef": {
+      "resource": "rolebindings",
+      "namespace": "kube-system",
+      "apiGroup": "rbac.authorization.k8s.io",
+      "apiVersion": "v1"
+    },
+    "responseStatus": null,
+    "annotations": null
+  },
+  {
+    "auditID": "07966e71-bff9-4ce1-b629-532765b9ef16",
+    "stage": "ResponseComplete",
+    "level": "RequestResponse",
+    "verb": "create",
+    "requestURI": "/apis/rbac.authorization.k8s.io/v1/namespaces/kube-system/rolebindings?timeout=10s",
+    "timestamp": "2026-06-23T07:23:02.892977Z",
+    "user": {
+      "username": "kubernetes-admin",
+      "groups": [
+        "kubeadm:cluster-admins",
+        "system:authenticated"
+      ],
+      "uid": null
+    },
+    "impersonatedUser": null,
+    "sourceIPs": [
+      "192.168.49.2"
+    ],
+    "userAgent": "kubeadm/v1.30.5 (linux/arm64) kubernetes/74e84a9",
+    "objectRef": {
+      "resource": "rolebindings",
+      "namespace": "kube-system",
+      "name": "kubeadm:nodes-kubeadm-config",
+      "apiGroup": "rbac.authorization.k8s.io",
+      "apiVersion": "v1"
+    },
+    "responseStatus": 201,
+    "annotations": {
+      "authorization.k8s.io/decision": "allow",
+      "authorization.k8s.io/reason": "RBAC: allowed by ClusterRoleBinding \"kubeadm:cluster-admins\" of ClusterRole \"cluster-admin\" to Group \"kubeadm:cluster-admins\""
+    }
+  },
+  {
+    "auditID": "3f424e9f-b9b7-4a1f-b73d-b392c0d5426e",
+    "stage": "RequestReceived",
+    "level": "RequestResponse",
+    "verb": "create",
+    "requestURI": "/apis/rbac.authorization.k8s.io/v1/namespaces/kube-system/rolebindings?timeout=10s",
+    "timestamp": "2026-06-23T07:23:02.896478Z",
+    "user": {
+      "username": "kubernetes-admin",
+      "groups": [
+        "kubeadm:cluster-admins",
+        "system:authenticated"
+      ],
+      "uid": null
+    },
+    "impersonatedUser": null,
+    "sourceIPs": [
+      "192.168.49.2"
+    ],
+    "userAgent": "kubeadm/v1.30.5 (linux/arm64) kubernetes/74e84a9",
+    "objectRef": {
+      "resource": "rolebindings",
+      "namespace": "kube-system",
+      "apiGroup": "rbac.authorization.k8s.io",
+      "apiVersion": "v1"
+    },
+    "responseStatus": null,
+    "annotations": null
+  },
+  {
+    "auditID": "3f424e9f-b9b7-4a1f-b73d-b392c0d5426e",
+    "stage": "ResponseComplete",
+    "level": "RequestResponse",
+    "verb": "create",
+    "requestURI": "/apis/rbac.authorization.k8s.io/v1/namespaces/kube-system/rolebindings?timeout=10s",
+    "timestamp": "2026-06-23T07:23:02.896478Z",
+    "user": {
+      "username": "kubernetes-admin",
+      "groups": [
+        "kubeadm:cluster-admins",
+        "system:authenticated"
+      ],
+      "uid": null
+    },
+    "impersonatedUser": null,
+    "sourceIPs": [
+      "192.168.49.2"
+    ],
+    "userAgent": "kubeadm/v1.30.5 (linux/arm64) kubernetes/74e84a9",
+    "objectRef": {
+      "resource": "rolebindings",
+      "namespace": "kube-system",
+      "name": "kubeadm:kubelet-config",
+      "apiGroup": "rbac.authorization.k8s.io",
+      "apiVersion": "v1"
+    },
+    "responseStatus": 201,
+    "annotations": {
+      "authorization.k8s.io/decision": "allow",
+      "authorization.k8s.io/reason": "RBAC: allowed by ClusterRoleBinding \"kubeadm:cluster-admins\" of ClusterRole \"cluster-admin\" to Group \"kubeadm:cluster-admins\""
+    }
+  },
+  {
+    "auditID": "b8f9dd07-6068-4e0b-b22b-f33ea3f1bfab",
+    "stage": "RequestReceived",
+    "level": "RequestResponse",
+    "verb": "get",
+    "requestURI": "/api/v1/namespaces/kube-system/secrets/bootstrap-token-6bjvo5?timeout=10s",
+    "timestamp": "2026-06-23T07:23:02.902816Z",
+    "user": {
+      "username": "kubernetes-admin",
+      "groups": [
+        "kubeadm:cluster-admins",
+        "system:authenticated"
+      ],
+      "uid": null
+    },
+    "impersonatedUser": null,
+    "sourceIPs": [
+      "192.168.49.2"
+    ],
+    "userAgent": "kubeadm/v1.30.5 (linux/arm64) kubernetes/74e84a9",
+    "objectRef": {
+      "resource": "secrets",
+      "namespace": "kube-system",
+      "name": "bootstrap-token-6bjvo5",
+      "apiVersion": "v1"
+    },
+    "responseStatus": null,
+    "annotations": null
+  },
+  {
+    "auditID": "b8f9dd07-6068-4e0b-b22b-f33ea3f1bfab",
+    "stage": "ResponseComplete",
+    "level": "RequestResponse",
+    "verb": "get",
+    "requestURI": "/api/v1/namespaces/kube-system/secrets/bootstrap-token-6bjvo5?timeout=10s",
+    "timestamp": "2026-06-23T07:23:02.902816Z",
+    "user": {
+      "username": "kubernetes-admin",
+      "groups": [
+        "kubeadm:cluster-admins",
+        "system:authenticated"
+      ],
+      "uid": null
+    },
+    "impersonatedUser": null,
+    "sourceIPs": [
+      "192.168.49.2"
+    ],
+    "userAgent": "kubeadm/v1.30.5 (linux/arm64) kubernetes/74e84a9",
+    "objectRef": {
+      "resource": "secrets",
+      "namespace": "kube-system",
+      "name": "bootstrap-token-6bjvo5",
+      "apiVersion": "v1"
+    },
+    "responseStatus": 404,
+    "annotations": {
+      "authorization.k8s.io/decision": "allow",
+      "authorization.k8s.io/reason": "RBAC: allowed by ClusterRoleBinding \"kubeadm:cluster-admins\" of ClusterRole \"cluster-admin\" to Group \"kubeadm:cluster-admins\""
+    }
+  },
+  {
+    "auditID": "aeeced91-6397-44f9-b1bd-e55ad5864ad5",
+    "stage": "RequestReceived",
+    "level": "RequestResponse",
+    "verb": "create",
+    "requestURI": "/apis/rbac.authorization.k8s.io/v1/namespaces/kube-public/rolebindings?timeout=10s",
+    "timestamp": "2026-06-23T07:23:03.272045Z",
+    "user": {
+      "username": "kubernetes-admin",
+      "groups": [
+        "kubeadm:cluster-admins",
+        "system:authenticated"
+      ],
+      "uid": null
+    },
+    "impersonatedUser": null,
+    "sourceIPs": [
+      "192.168.49.2"
+    ],
+    "userAgent": "kubeadm/v1.30.5 (linux/arm64) kubernetes/74e84a9",
+    "objectRef": {
+      "resource": "rolebindings",
+      "namespace": "kube-public",
+      "apiGroup": "rbac.authorization.k8s.io",
+      "apiVersion": "v1"
+    },
+    "responseStatus": null,
+    "annotations": null
+  },
+  {
+    "auditID": "aeeced91-6397-44f9-b1bd-e55ad5864ad5",
+    "stage": "ResponseComplete",
+    "level": "RequestResponse",
+    "verb": "create",
+    "requestURI": "/apis/rbac.authorization.k8s.io/v1/namespaces/kube-public/rolebindings?timeout=10s",
+    "timestamp": "2026-06-23T07:23:03.272045Z",
+    "user": {
+      "username": "kubernetes-admin",
+      "groups": [
+        "kubeadm:cluster-admins",
+        "system:authenticated"
+      ],
+      "uid": null
+    },
+    "impersonatedUser": null,
+    "sourceIPs": [
+      "192.168.49.2"
+    ],
+    "userAgent": "kubeadm/v1.30.5 (linux/arm64) kubernetes/74e84a9",
+    "objectRef": {
+      "resource": "rolebindings",
+      "namespace": "kube-public",
+      "name": "kubeadm:bootstrap-signer-clusterinfo",
+      "apiGroup": "rbac.authorization.k8s.io",
+      "apiVersion": "v1"
+    },
+    "responseStatus": 201,
+    "annotations": {
+      "authorization.k8s.io/decision": "allow",
+      "authorization.k8s.io/reason": "RBAC: allowed by ClusterRoleBinding \"kubeadm:cluster-admins\" of ClusterRole \"cluster-admin\" to Group \"kubeadm:cluster-admins\""
+    }
+  },
+  {
+    "auditID": "def870b1-6d75-4725-b8dc-0bd2d4a63dc7",
+    "stage": "RequestReceived",
+    "level": "RequestResponse",
+    "verb": "list",
+    "requestURI": "/api/v1/secrets?limit=500&resourceVersion=0",
+    "timestamp": "2026-06-23T07:23:03.292531Z",
+    "user": {
+      "username": "system:kube-controller-manager",
+      "groups": [
+        "system:authenticated"
+      ],
+      "uid": null
+    },
+    "impersonatedUser": null,
+    "sourceIPs": [
+      "192.168.49.2"
+    ],
+    "userAgent": "kube-controller-manager/v1.30.5 (linux/arm64) kubernetes/74e84a9/shared-informers",
+    "objectRef": {
+      "resource": "secrets",
+      "apiVersion": "v1"
+    },
+    "responseStatus": null,
+    "annotations": null
+  },
+  {
+    "auditID": "def870b1-6d75-4725-b8dc-0bd2d4a63dc7",
+    "stage": "ResponseComplete",
+    "level": "RequestResponse",
+    "verb": "list",
+    "requestURI": "/api/v1/secrets?limit=500&resourceVersion=0",
+    "timestamp": "2026-06-23T07:23:03.292531Z",
+    "user": {
+      "username": "system:kube-controller-manager",
+      "groups": [
+        "system:authenticated"
+      ],
+      "uid": null
+    },
+    "impersonatedUser": null,
+    "sourceIPs": [
+      "192.168.49.2"
+    ],
+    "userAgent": "kube-controller-manager/v1.30.5 (linux/arm64) kubernetes/74e84a9/shared-informers",
+    "objectRef": {
+      "resource": "secrets",
+      "apiVersion": "v1"
+    },
+    "responseStatus": 200,
+    "annotations": {
+      "authorization.k8s.io/decision": "allow",
+      "authorization.k8s.io/reason": "RBAC: allowed by ClusterRoleBinding \"system:kube-controller-manager\" of ClusterRole \"system:kube-controller-manager\" to User \"system:kube-controller-manager\""
+    }
+  },
+  {
+    "auditID": "868b6435-fc99-4afd-9417-cadbda98da8e",
+    "stage": "ResponseStarted",
+    "level": "Metadata",
+    "verb": "watch",
+    "requestURI": "/api/v1/secrets?allowWatchBookmarks=true&resourceVersion=210&timeout=8m37s&timeoutSeconds=517&watch=true",
+    "timestamp": "2026-06-23T07:23:03.294369Z",
+    "user": {
+      "username": "system:kube-controller-manager",
+      "groups": [
+        "system:authenticated"
+      ],
+      "uid": null
+    },
+    "impersonatedUser": null,
+    "sourceIPs": [
+      "192.168.49.2"
+    ],
+    "userAgent": "kube-controller-manager/v1.30.5 (linux/arm64) kubernetes/74e84a9/shared-informers",
+    "objectRef": {
+      "resource": "secrets",
+      "apiVersion": "v1"
+    },
+    "responseStatus": 200,
+    "annotations": {
+      "authorization.k8s.io/decision": "allow",
+      "authorization.k8s.io/reason": "RBAC: allowed by ClusterRoleBinding \"system:kube-controller-manager\" of ClusterRole \"system:kube-controller-manager\" to User \"system:kube-controller-manager\""
+    }
+  },
+  {
+    "auditID": "7c762b84-9729-425a-9b69-ec5c7d0d6a5f",
+    "stage": "RequestReceived",
+    "level": "RequestResponse",
+    "verb": "create",
+    "requestURI": "/apis/rbac.authorization.k8s.io/v1/namespaces/kube-system/rolebindings?timeout=10s",
+    "timestamp": "2026-06-23T07:23:04.271922Z",
+    "user": {
+      "username": "kubernetes-admin",
+      "groups": [
+        "kubeadm:cluster-admins",
+        "system:authenticated"
+      ],
+      "uid": null
+    },
+    "impersonatedUser": null,
+    "sourceIPs": [
+      "192.168.49.2"
+    ],
+    "userAgent": "kubeadm/v1.30.5 (linux/arm64) kubernetes/74e84a9",
+    "objectRef": {
+      "resource": "rolebindings",
+      "namespace": "kube-system",
+      "apiGroup": "rbac.authorization.k8s.io",
+      "apiVersion": "v1"
+    },
+    "responseStatus": null,
+    "annotations": null
+  },
+  {
+    "auditID": "7c762b84-9729-425a-9b69-ec5c7d0d6a5f",
+    "stage": "ResponseComplete",
+    "level": "RequestResponse",
+    "verb": "create",
+    "requestURI": "/apis/rbac.authorization.k8s.io/v1/namespaces/kube-system/rolebindings?timeout=10s",
+    "timestamp": "2026-06-23T07:23:04.271922Z",
+    "user": {
+      "username": "kubernetes-admin",
+      "groups": [
+        "kubeadm:cluster-admins",
+        "system:authenticated"
+      ],
+      "uid": null
+    },
+    "impersonatedUser": null,
+    "sourceIPs": [
+      "192.168.49.2"
+    ],
+    "userAgent": "kubeadm/v1.30.5 (linux/arm64) kubernetes/74e84a9",
+    "objectRef": {
+      "resource": "rolebindings",
+      "namespace": "kube-system",
+      "name": "kube-proxy",
+      "apiGroup": "rbac.authorization.k8s.io",
+      "apiVersion": "v1"
+    },
+    "responseStatus": 201,
+    "annotations": {
+      "authorization.k8s.io/decision": "allow",
+      "authorization.k8s.io/reason": "RBAC: allowed by ClusterRoleBinding \"kubeadm:cluster-admins\" of ClusterRole \"cluster-admin\" to Group \"kubeadm:cluster-admins\""
+    }
+  },
+  {
+    "auditID": "f31fb52e-f2b1-49af-8977-f406669da73e",
+    "stage": "RequestReceived",
+    "level": "RequestResponse",
+    "verb": "create",
+    "requestURI": "/apis/rbac.authorization.k8s.io/v1/namespaces/kube-system/rolebindings?fieldManager=kubectl-client-side-apply&fieldValidation=Strict",
+    "timestamp": "2026-06-23T07:23:05.121792Z",
+    "user": {
+      "username": "minikube",
+      "groups": [
+        "system:masters",
+        "system:authenticated"
+      ],
+      "uid": null
+    },
+    "impersonatedUser": null,
+    "sourceIPs": [
+      "::1"
+    ],
+    "userAgent": "kubectl/v1.30.5 (linux/arm64) kubernetes/74e84a9",
+    "objectRef": {
+      "resource": "rolebindings",
+      "namespace": "kube-system",
+      "apiGroup": "rbac.authorization.k8s.io",
+      "apiVersion": "v1"
+    },
+    "responseStatus": null,
+    "annotations": null
+  },
+  {
+    "auditID": "f31fb52e-f2b1-49af-8977-f406669da73e",
+    "stage": "ResponseComplete",
+    "level": "RequestResponse",
+    "verb": "create",
+    "requestURI": "/apis/rbac.authorization.k8s.io/v1/namespaces/kube-system/rolebindings?fieldManager=kubectl-client-side-apply&fieldValidation=Strict",
+    "timestamp": "2026-06-23T07:23:05.121792Z",
+    "user": {
+      "username": "minikube",
+      "groups": [
+        "system:masters",
+        "system:authenticated"
+      ],
+      "uid": null
+    },
+    "impersonatedUser": null,
+    "sourceIPs": [
+      "::1"
+    ],
+    "userAgent": "kubectl/v1.30.5 (linux/arm64) kubernetes/74e84a9",
+    "objectRef": {
+      "resource": "rolebindings",
+      "namespace": "kube-system",
+      "name": "system:persistent-volume-provisioner",
+      "apiGroup": "rbac.authorization.k8s.io",
+      "apiVersion": "v1"
+    },
+    "responseStatus": 201,
+    "annotations": {
+      "authorization.k8s.io/decision": "allow",
+      "authorization.k8s.io/reason": ""
+    }
+  },
+  {
+    "auditID": "8ee22430-fdb2-45cd-af58-4465bfc1eaea",
+    "stage": "ResponseComplete",
+    "level": "RequestResponse",
+    "verb": "create",
+    "requestURI": "/api/v1/namespaces/kube-system/pods",
+    "timestamp": "2026-06-23T07:23:17.358717Z",
+    "user": {
+      "username": "system:serviceaccount:kube-system:daemon-set-controller",
+      "groups": [
+        "system:serviceaccounts",
+        "system:serviceaccounts:kube-system",
+        "system:authenticated"
+      ],
+      "uid": "ca20196b-b959-4881-89fd-531740167b94"
+    },
+    "impersonatedUser": null,
+    "sourceIPs": [
+      "192.168.49.2"
+    ],
+    "userAgent": "kube-controller-manager/v1.30.5 (linux/arm64) kubernetes/74e84a9/system:serviceaccount:kube-system:daemon-set-controller",
+    "objectRef": {
+      "resource": "pods",
+      "namespace": "kube-system",
+      "apiVersion": "v1"
+    },
+    "responseStatus": 201,
+    "annotations": {
+      "authorization.k8s.io/decision": "allow",
+      "authorization.k8s.io/reason": "RBAC: allowed by ClusterRoleBinding \"system:controller:daemon-set-controller\" of ClusterRole \"system:controller:daemon-set-controller\" to ServiceAccount \"daemon-set-controller/kube-system\"",
+      "pod-security.kubernetes.io/enforce-policy": "privileged:latest"
+    }
+  },
+  {
+    "auditID": "ae08e25f-8543-4d7a-81dd-3322137023d0",
+    "stage": "ResponseComplete",
+    "level": "RequestResponse",
+    "verb": "create",
+    "requestURI": "/api/v1/namespaces/kube-system/pods",
+    "timestamp": "2026-06-23T07:23:17.359464Z",
+    "user": {
+      "username": "system:serviceaccount:kube-system:daemon-set-controller",
+      "groups": [
+        "system:serviceaccounts",
+        "system:serviceaccounts:kube-system",
+        "system:authenticated"
+      ],
+      "uid": "ca20196b-b959-4881-89fd-531740167b94"
+    },
+    "impersonatedUser": null,
+    "sourceIPs": [
+      "192.168.49.2"
+    ],
+    "userAgent": "kube-controller-manager/v1.30.5 (linux/arm64) kubernetes/74e84a9/system:serviceaccount:kube-system:daemon-set-controller",
+    "objectRef": {
+      "resource": "pods",
+      "namespace": "kube-system",
+      "apiVersion": "v1"
+    },
+    "responseStatus": 201,
+    "annotations": {
+      "authorization.k8s.io/decision": "allow",
+      "authorization.k8s.io/reason": "RBAC: allowed by ClusterRoleBinding \"system:controller:daemon-set-controller\" of ClusterRole \"system:controller:daemon-set-controller\" to ServiceAccount \"daemon-set-controller/kube-system\"",
+      "pod-security.kubernetes.io/enforce-policy": "privileged:latest"
+    }
+  },
+  {
+    "auditID": "cc00a849-8237-4a30-8427-fc18c008f55c",
+    "stage": "ResponseComplete",
+    "level": "Metadata",
+    "verb": "create",
+    "requestURI": "/apis/authorization.k8s.io/v1/selfsubjectaccessreviews",
+    "timestamp": "2026-06-23T07:47:39.527175Z",
+    "user": {
+      "username": "minikube-user",
+      "groups": [
+        "system:masters",
+        "system:authenticated"
+      ],
+      "uid": null
+    },
+    "impersonatedUser": {
+      "username": "system:serviceaccount:secure-ops:monitoring",
+      "groups": [
+        "system:serviceaccounts",
+        "system:serviceaccounts:secure-ops",
+        "system:authenticated"
+      ]
+    },
+    "sourceIPs": [
+      "192.168.49.1"
+    ],
+    "userAgent": "kubectl/v1.35.1 (darwin/arm64) kubernetes/8fea90b",
+    "objectRef": {
+      "resource": "selfsubjectaccessreviews",
+      "apiGroup": "authorization.k8s.io",
+      "apiVersion": "v1"
+    },
+    "responseStatus": 201,
+    "annotations": {
+      "authorization.k8s.io/decision": "allow",
+      "authorization.k8s.io/reason": "RBAC: allowed by ClusterRoleBinding \"system:basic-user\" of ClusterRole \"system:basic-user\" to Group \"system:authenticated\""
+    }
+  },
+  {
+    "auditID": "f2ada9c8-698d-47d2-875e-d730795e845c",
+    "stage": "RequestReceived",
+    "level": "RequestResponse",
+    "verb": "list",
+    "requestURI": "/api/v1/namespaces/kube-system/secrets?limit=500",
+    "timestamp": "2026-06-23T07:47:39.560828Z",
+    "user": {
+      "username": "minikube-user",
+      "groups": [
+        "system:masters",
+        "system:authenticated"
+      ],
+      "uid": null
+    },
+    "impersonatedUser": null,
+    "sourceIPs": [
+      "192.168.49.1"
+    ],
+    "userAgent": "kubectl/v1.35.1 (darwin/arm64) kubernetes/8fea90b",
+    "objectRef": {
+      "resource": "secrets",
+      "namespace": "kube-system",
+      "apiVersion": "v1"
+    },
+    "responseStatus": null,
+    "annotations": null
+  },
+  {
+    "auditID": "f2ada9c8-698d-47d2-875e-d730795e845c",
+    "stage": "ResponseComplete",
+    "level": "RequestResponse",
+    "verb": "list",
+    "requestURI": "/api/v1/namespaces/kube-system/secrets?limit=500",
+    "timestamp": "2026-06-23T07:47:39.560828Z",
+    "user": {
+      "username": "minikube-user",
+      "groups": [
+        "system:masters",
+        "system:authenticated"
+      ],
+      "uid": null
+    },
+    "impersonatedUser": null,
+    "sourceIPs": [
+      "192.168.49.1"
+    ],
+    "userAgent": "kubectl/v1.35.1 (darwin/arm64) kubernetes/8fea90b",
+    "objectRef": {
+      "resource": "secrets",
+      "namespace": "kube-system",
+      "apiVersion": "v1"
+    },
+    "responseStatus": 200,
+    "annotations": {
+      "authorization.k8s.io/decision": "allow",
+      "authorization.k8s.io/reason": ""
+    }
+  },
+  {
+    "auditID": "723f2ec9-8d1a-4c2e-b548-5737d72b9307",
+    "stage": "RequestReceived",
+    "level": "RequestResponse",
+    "verb": "list",
+    "requestURI": "/api/v1/namespaces/kube-system/secrets?limit=500",
+    "timestamp": "2026-06-23T07:47:39.595757Z",
+    "user": {
+      "username": "minikube-user",
+      "groups": [
+        "system:masters",
+        "system:authenticated"
+      ],
+      "uid": null
+    },
+    "impersonatedUser": null,
+    "sourceIPs": [
+      "192.168.49.1"
+    ],
+    "userAgent": "kubectl/v1.35.1 (darwin/arm64) kubernetes/8fea90b",
+    "objectRef": {
+      "resource": "secrets",
+      "namespace": "kube-system",
+      "apiVersion": "v1"
+    },
+    "responseStatus": null,
+    "annotations": null
+  },
+  {
+    "auditID": "723f2ec9-8d1a-4c2e-b548-5737d72b9307",
+    "stage": "ResponseComplete",
+    "level": "RequestResponse",
+    "verb": "list",
+    "requestURI": "/api/v1/namespaces/kube-system/secrets?limit=500",
+    "timestamp": "2026-06-23T07:47:39.595757Z",
+    "user": {
+      "username": "minikube-user",
+      "groups": [
+        "system:masters",
+        "system:authenticated"
+      ],
+      "uid": null
+    },
+    "impersonatedUser": null,
+    "sourceIPs": [
+      "192.168.49.1"
+    ],
+    "userAgent": "kubectl/v1.35.1 (darwin/arm64) kubernetes/8fea90b",
+    "objectRef": {
+      "resource": "secrets",
+      "namespace": "kube-system",
+      "apiVersion": "v1"
+    },
+    "responseStatus": 200,
+    "annotations": {
+      "authorization.k8s.io/decision": "allow",
+      "authorization.k8s.io/reason": ""
+    }
+  },
+  {
+    "auditID": "a2aa10b6-e95b-4fdd-99f0-0f59a076005c",
+    "stage": "RequestReceived",
+    "level": "RequestResponse",
+    "verb": "get",
+    "requestURI": "/api/v1/namespaces/kube-system/secrets/bootstrap-token-6bjvo5",
+    "timestamp": "2026-06-23T07:47:39.630525Z",
+    "user": {
+      "username": "minikube-user",
+      "groups": [
+        "system:masters",
+        "system:authenticated"
+      ],
+      "uid": null
+    },
+    "impersonatedUser": null,
+    "sourceIPs": [
+      "192.168.49.1"
+    ],
+    "userAgent": "kubectl/v1.35.1 (darwin/arm64) kubernetes/8fea90b",
+    "objectRef": {
+      "resource": "secrets",
+      "namespace": "kube-system",
+      "name": "bootstrap-token-6bjvo5",
+      "apiVersion": "v1"
+    },
+    "responseStatus": null,
+    "annotations": null
+  },
+  {
+    "auditID": "a2aa10b6-e95b-4fdd-99f0-0f59a076005c",
+    "stage": "ResponseComplete",
+    "level": "RequestResponse",
+    "verb": "get",
+    "requestURI": "/api/v1/namespaces/kube-system/secrets/bootstrap-token-6bjvo5",
+    "timestamp": "2026-06-23T07:47:39.630525Z",
+    "user": {
+      "username": "minikube-user",
+      "groups": [
+        "system:masters",
+        "system:authenticated"
+      ],
+      "uid": null
+    },
+    "impersonatedUser": {
+      "username": "system:serviceaccount:secure-ops:monitoring",
+      "groups": [
+        "system:serviceaccounts",
+        "system:serviceaccounts:secure-ops",
+        "system:authenticated"
+      ]
+    },
+    "sourceIPs": [
+      "192.168.49.1"
+    ],
+    "userAgent": "kubectl/v1.35.1 (darwin/arm64) kubernetes/8fea90b",
+    "objectRef": {
+      "resource": "secrets",
+      "namespace": "kube-system",
+      "name": "bootstrap-token-6bjvo5",
+      "apiVersion": "v1"
+    },
+    "responseStatus": 403,
+    "annotations": {
+      "authorization.k8s.io/decision": "forbid",
+      "authorization.k8s.io/reason": ""
+    }
+  },
+  {
+    "auditID": "0c992811-a9a9-4224-a7a8-30ee0cff3a12",
+    "stage": "ResponseComplete",
+    "level": "RequestResponse",
+    "verb": "create",
+    "requestURI": "/api/v1/namespaces/secure-ops/pods?fieldManager=kubectl-client-side-apply&fieldValidation=Strict",
+    "timestamp": "2026-06-23T07:47:39.691842Z",
+    "user": {
+      "username": "minikube-user",
+      "groups": [
+        "system:masters",
+        "system:authenticated"
+      ],
+      "uid": null
+    },
+    "impersonatedUser": null,
+    "sourceIPs": [
+      "192.168.49.1"
+    ],
+    "userAgent": "kubectl/v1.35.1 (darwin/arm64) kubernetes/8fea90b",
+    "objectRef": {
+      "resource": "pods",
+      "namespace": "secure-ops",
+      "name": "privileged-pod",
+      "apiVersion": "v1"
+    },
+    "responseStatus": 201,
+    "annotations": {
+      "authorization.k8s.io/decision": "allow",
+      "authorization.k8s.io/reason": "",
+      "pod-security.kubernetes.io/enforce-policy": "privileged:latest"
+    }
+  },
+  {
+    "auditID": "8e299b48-9802-47ea-bfc1-fcc0ef7f854c",
+    "stage": "ResponseStarted",
+    "level": "Metadata",
+    "verb": "get",
+    "requestURI": "/api/v1/namespaces/kube-system/pods/coredns-55cb58b774-t7mt7/exec?command=cat&command=%2Fetc%2Fresolv.conf&container=coredns&stderr=true&stdout=true",
+    "timestamp": "2026-06-23T07:47:39.920929Z",
+    "user": {
+      "username": "minikube-user",
+      "groups": [
+        "system:masters",
+        "system:authenticated"
+      ],
+      "uid": null
+    },
+    "impersonatedUser": null,
+    "sourceIPs": [
+      "192.168.49.1"
+    ],
+    "userAgent": "kubectl/v1.35.1 (darwin/arm64) kubernetes/8fea90b",
+    "objectRef": {
+      "resource": "pods",
+      "namespace": "kube-system",
+      "name": "coredns-55cb58b774-t7mt7",
+      "apiVersion": "v1",
+      "subresource": "exec"
+    },
+    "responseStatus": 101,
+    "annotations": {
+      "authorization.k8s.io/decision": "allow",
+      "authorization.k8s.io/reason": ""
+    }
+  },
+  {
+    "auditID": "8e299b48-9802-47ea-bfc1-fcc0ef7f854c",
+    "stage": "ResponseComplete",
+    "level": "Metadata",
+    "verb": "get",
+    "requestURI": "/api/v1/namespaces/kube-system/pods/coredns-55cb58b774-t7mt7/exec?command=cat&command=%2Fetc%2Fresolv.conf&container=coredns&stderr=true&stdout=true",
+    "timestamp": "2026-06-23T07:47:39.920929Z",
+    "user": {
+      "username": "minikube-user",
+      "groups": [
+        "system:masters",
+        "system:authenticated"
+      ],
+      "uid": null
+    },
+    "impersonatedUser": null,
+    "sourceIPs": [
+      "192.168.49.1"
+    ],
+    "userAgent": "kubectl/v1.35.1 (darwin/arm64) kubernetes/8fea90b",
+    "objectRef": {
+      "resource": "pods",
+      "namespace": "kube-system",
+      "name": "coredns-55cb58b774-t7mt7",
+      "apiVersion": "v1",
+      "subresource": "exec"
+    },
+    "responseStatus": 101,
+    "annotations": {
+      "authorization.k8s.io/decision": "allow",
+      "authorization.k8s.io/reason": ""
+    }
+  },
+  {
+    "auditID": "49f1c4b8-f62b-4bc3-8cad-63f4575a50ae",
+    "stage": "RequestReceived",
+    "level": "RequestResponse",
+    "verb": "delete",
+    "requestURI": "/api/v1/namespaces/secure-ops/configmaps/audit-policy",
+    "timestamp": "2026-06-23T07:47:40.008923Z",
+    "user": {
+      "username": "minikube-user",
+      "groups": [
+        "system:masters",
+        "system:authenticated"
+      ],
+      "uid": null
+    },
+    "impersonatedUser": null,
+    "sourceIPs": [
+      "192.168.49.1"
+    ],
+    "userAgent": "kubectl/v1.35.1 (darwin/arm64) kubernetes/8fea90b",
+    "objectRef": {
+      "resource": "configmaps",
+      "namespace": "secure-ops",
+      "name": "audit-policy",
+      "apiVersion": "v1"
+    },
+    "responseStatus": null,
+    "annotations": null
+  },
+  {
+    "auditID": "49f1c4b8-f62b-4bc3-8cad-63f4575a50ae",
+    "stage": "ResponseComplete",
+    "level": "RequestResponse",
+    "verb": "delete",
+    "requestURI": "/api/v1/namespaces/secure-ops/configmaps/audit-policy",
+    "timestamp": "2026-06-23T07:47:40.008923Z",
+    "user": {
+      "username": "minikube-user",
+      "groups": [
+        "system:masters",
+        "system:authenticated"
+      ],
+      "uid": null
+    },
+    "impersonatedUser": {
+      "username": "admin",
+      "groups": [
+        "system:authenticated"
+      ]
+    },
+    "sourceIPs": [
+      "192.168.49.1"
+    ],
+    "userAgent": "kubectl/v1.35.1 (darwin/arm64) kubernetes/8fea90b",
+    "objectRef": {
+      "resource": "configmaps",
+      "namespace": "secure-ops",
+      "name": "audit-policy",
+      "apiVersion": "v1"
+    },
+    "responseStatus": 403,
+    "annotations": {
+      "authorization.k8s.io/decision": "forbid",
+      "authorization.k8s.io/reason": ""
+    }
+  },
+  {
+    "auditID": "663e9786-7830-4574-8f94-de108fc8f004",
+    "stage": "RequestReceived",
+    "level": "RequestResponse",
+    "verb": "create",
+    "requestURI": "/apis/rbac.authorization.k8s.io/v1/namespaces/secure-ops/rolebindings?fieldManager=kubectl-client-side-apply&fieldValidation=Strict",
+    "timestamp": "2026-06-23T07:47:40.050458Z",
+    "user": {
+      "username": "minikube-user",
+      "groups": [
+        "system:masters",
+        "system:authenticated"
+      ],
+      "uid": null
+    },
+    "impersonatedUser": null,
+    "sourceIPs": [
+      "192.168.49.1"
+    ],
+    "userAgent": "kubectl/v1.35.1 (darwin/arm64) kubernetes/8fea90b",
+    "objectRef": {
+      "resource": "rolebindings",
+      "namespace": "secure-ops",
+      "apiGroup": "rbac.authorization.k8s.io",
+      "apiVersion": "v1"
+    },
+    "responseStatus": null,
+    "annotations": null
+  },
+  {
+    "auditID": "663e9786-7830-4574-8f94-de108fc8f004",
+    "stage": "ResponseComplete",
+    "level": "RequestResponse",
+    "verb": "create",
+    "requestURI": "/apis/rbac.authorization.k8s.io/v1/namespaces/secure-ops/rolebindings?fieldManager=kubectl-client-side-apply&fieldValidation=Strict",
+    "timestamp": "2026-06-23T07:47:40.050458Z",
+    "user": {
+      "username": "minikube-user",
+      "groups": [
+        "system:masters",
+        "system:authenticated"
+      ],
+      "uid": null
+    },
+    "impersonatedUser": null,
+    "sourceIPs": [
+      "192.168.49.1"
+    ],
+    "userAgent": "kubectl/v1.35.1 (darwin/arm64) kubernetes/8fea90b",
+    "objectRef": {
+      "resource": "rolebindings",
+      "namespace": "secure-ops",
+      "name": "escalate-binding",
+      "apiGroup": "rbac.authorization.k8s.io",
+      "apiVersion": "v1"
+    },
+    "responseStatus": 201,
+    "annotations": {
+      "authorization.k8s.io/decision": "allow",
+      "authorization.k8s.io/reason": ""
+    }
+  },
+  {
+    "auditID": "056af96c-70e2-45b2-af0e-cf6514e68560",
+    "stage": "ResponseStarted",
+    "level": "Metadata",
+    "verb": "get",
+    "requestURI": "/api/v1/namespaces/kube-system/pods/coredns-55cb58b774-t7mt7/exec?command=%2Fcoredns&command=-version&container=coredns&stderr=true&stdout=true",
+    "timestamp": "2026-06-23T07:48:54.927171Z",
+    "user": {
+      "username": "minikube-user",
+      "groups": [
+        "system:masters",
+        "system:authenticated"
+      ],
+      "uid": null
+    },
+    "impersonatedUser": null,
+    "sourceIPs": [
+      "192.168.49.1"
+    ],
+    "userAgent": "kubectl/v1.35.1 (darwin/arm64) kubernetes/8fea90b",
+    "objectRef": {
+      "resource": "pods",
+      "namespace": "kube-system",
+      "name": "coredns-55cb58b774-t7mt7",
+      "apiVersion": "v1",
+      "subresource": "exec"
+    },
+    "responseStatus": 101,
+    "annotations": {
+      "authorization.k8s.io/decision": "allow",
+      "authorization.k8s.io/reason": ""
+    }
+  },
+  {
+    "auditID": "056af96c-70e2-45b2-af0e-cf6514e68560",
+    "stage": "ResponseComplete",
+    "level": "Metadata",
+    "verb": "get",
+    "requestURI": "/api/v1/namespaces/kube-system/pods/coredns-55cb58b774-t7mt7/exec?command=%2Fcoredns&command=-version&container=coredns&stderr=true&stdout=true",
+    "timestamp": "2026-06-23T07:48:54.927171Z",
+    "user": {
+      "username": "minikube-user",
+      "groups": [
+        "system:masters",
+        "system:authenticated"
+      ],
+      "uid": null
+    },
+    "impersonatedUser": null,
+    "sourceIPs": [
+      "192.168.49.1"
+    ],
+    "userAgent": "kubectl/v1.35.1 (darwin/arm64) kubernetes/8fea90b",
+    "objectRef": {
+      "resource": "pods",
+      "namespace": "kube-system",
+      "name": "coredns-55cb58b774-t7mt7",
+      "apiVersion": "v1",
+      "subresource": "exec"
+    },
+    "responseStatus": 101,
+    "annotations": {
+      "authorization.k8s.io/decision": "allow",
+      "authorization.k8s.io/reason": ""
+    }
+  }
+]
